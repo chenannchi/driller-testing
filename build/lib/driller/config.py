@@ -14,15 +14,15 @@ CELERY_ROUTES = None
 QEMU_DIR=None
 
 # directory containing the binaries, used by the driller node to find binaries
-BINARY_DIR="./target_program"
+BINARY_DIR=None
 # directory containing the pcap corpus
 PCAP_DIR=None
 # directory containing the seeds for fuzzing
-SEED_DIR="./afl_inputs"
+SEED_DIR=None
 
 ### Driller options
 # how long to drill before giving up in seconds
-DRILL_TIMEOUT=60
+DRILL_TIMEOUT=None
 
 MEM_LIMIT=None
 
@@ -35,16 +35,16 @@ DEBUG_DIR = None
 ### Fuzzer options
 
 # how often to check for crashes in seconds
-CRASH_CHECK_INTERVAL=1
+CRASH_CHECK_INTERVAL=None
 
 # how long to fuzz before giving up in seconds
-FUZZ_TIMEOUT=300
+FUZZ_TIMEOUT=None
 
 # how long before we kill a dictionary creation process
-DICTIONARY_TIMEOUT=30
+DICTIONARY_TIMEOUT=None
 
 # how many fuzzers should be spun up when a fuzzing job is received
-FUZZER_INSTANCES=2
+FUZZER_INSTANCES=None
 
 # where the fuzzer should place it's results on the filesystem
-FUZZER_WORK_DIR="./afl_outputs"
+FUZZER_WORK_DIR=None
